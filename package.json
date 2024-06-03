@@ -1,0 +1,21 @@
+{
+  "name": "landing-power-pallets",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^5.1.0",
+    "@fontsource-variable/onest": "^5.0.4",
+    "astro": "^4.8.5",
+    "dotenv": "^16.4.5",
+    "flowbite": "^2.3.0",
+    "nodemailer": "^6.9.13",
+    "tailwindcss": "^3.4.3"
+  }
+}

@@ -1,0 +1,8 @@
+node_modules/
+dist/
+
+# ignore top-level vscode settings
+/.vscode/settings.json
+
+# do not commit .env files or any files that end with `.env`
+*.env
