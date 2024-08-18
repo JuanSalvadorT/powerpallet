@@ -1,0 +1,142 @@
+---
+import DarkIcon from '../icons/dark.astro';
+import LightIcon from '../icons/light.astro';
+---
+
+<nav class="border-gray-200 text-gray-900 dark:text-gray-200">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+                src="/logo.png"
+                class="h-8"
+                alt="Flowbite Logo"/>
+            <span 
+            class="self-center text-2xl font-semibold uppercase whitespace-nowrap dark:text-gray-200">
+            Powerpallet
+            </span>
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <button onclick="toggleTheme()" aria-label="Toggle theme">
+                <span id="theme-icon"></span>
+            </button>
+            <button
+                data-collapse-toggle="navbar-cta"
+                type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-cta"
+                aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg
+                    class="w-5 h-5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 17 14">
+                    <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+            <ul
+                class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
+                <li>
+                    <a
+                        href="#inicio"
+                        class="block py-2 px-3 md:p-0 text-gray-100 bg-brown-500 dark:bg-amber-500 md:dark:bg-transparent dark:text-gray-100 rounded md:bg-transparent md:text-brown-500 md:dark:text-amber-500"
+                        aria-current="page">Inicio</a>
+                </li>
+                <li>
+                    <a
+                        href="#nosotros"
+                        class="block py-2 px-3 md:p-0 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-brown-500 md:dark:hover:text-amber-500 dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent dark:border-gray-700">Sobre nosotros</a>
+                </li>
+                <li>
+                    <a
+                        href="#servicios"
+                        class="block py-2 px-3 md:p-0 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-brown-500 md:dark:hover:text-amber-500 dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent dark:border-gray-700">Servicios</a>
+                </li>
+                <li>
+                    <a
+                        href="#medidas"
+                        class="block py-2 px-3 md:p-0 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-brown-500 md:dark:hover:text-amber-500 dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent dark:border-gray-700">Medidas</a>
+                </li>
+                <li>
+                    <a
+                        href="#contacto"
+                        class="block py-2 px-3 md:p-0 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-brown-500 md:dark:hover:text-amber-500 dark:text-gray-200 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent dark:border-gray-700">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<script>
+// src/js/themeToggle.js
+declare global {
+  interface Window {
+    toggleTheme: () => void;
+  }
+}
+
+const lightIcon = `
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="icon icon-tabler icons-tabler-outline icon-tabler-brightness-down"
+    ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+        d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path><path
+        d="M12 5l0 .01"></path><path d="M17 7l0 .01"></path><path
+        d="M19 12l0 .01"></path><path d="M17 17l0 .01"></path><path
+        d="M12 19l0 .01"></path><path d="M7 17l0 .01"></path><path
+        d="M5 12l0 .01"></path><path d="M7 7l0 .01"></path></svg>`;
+
+const darkIcon = `
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="icon icon-tabler icons-tabler-outline icon-tabler-moon"
+    ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+        d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
+    ></path></svg>`;
+
+if (typeof window !== 'undefined') {
+    window.toggleTheme = function toggleTheme() {
+        const storedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        let theme = storedTheme || (systemPrefersDark ? 'dark' : 'light');
+
+        theme = theme === 'dark' ? 'light' : 'dark';
+        document.documentElement.classList.toggle('dark', theme === 'dark');
+        localStorage.setItem('theme', theme);
+        document.getElementById('theme-icon').innerHTML = theme === 'dark' ? lightIcon : darkIcon;
+    };
+
+    // Establece el tema al cargar la página
+    const storedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = storedTheme || (systemPrefersDark ? 'dark' : 'light');
+    document.documentElement.classList.toggle('dark', theme === 'dark');
+    document.getElementById('theme-icon').innerHTML = theme === 'dark' ? lightIcon : darkIcon;
+}
+
+</script>		
+	

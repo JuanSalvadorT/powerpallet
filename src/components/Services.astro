@@ -1,0 +1,40 @@
+---
+import AmbientalIcon from "../icons/AmbientalIcon.astro";
+import CalidadIcon from "../icons/CalidadIcon.astro";
+import NormativaIcon from "../icons/NormativaIcon.astro";
+---
+<section class="container mx-auto w-full py-12 md:py-24 lg:py-32" id="servicios">
+    <div class="container space-y-12 px-4 md:px-6">
+      <div class="flex flex-col items-center justify-center space-y-4 text-center">
+        <div class="space-y-2">
+          <h2 class="text-brown-500 dark:text-amber-500 text-3xl font-bold tracking-tighter md:text-4xl/tight">Nuestro servicio de pallets</h2>
+          <p class="max-w-[900px] text-gray-500 dark:text-gray-200 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            Cumplimos estándares de calidad, seguridad y cuidado del medio ambiente.
+          </p>
+        </div>
+      </div>
+      <div class="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
+        <div class="grid gap-1">
+          <AmbientalIcon class="size-10 mx-auto text-gray-900 dark:text-gray-100"/>
+          <h3 class="text-lg font-bold text-center text-gray-900 dark:text-gray-100">Ambiental</h3>
+          <p class="text-normal text-gray-500 dark:text-gray-300 text-center">
+            Valoramos la madera y la reducción a gran escala de los niveles de deforestación.
+          </p>
+        </div>
+        <div class="grid gap-1">
+          <CalidadIcon class="size-10 mx-auto text-gray-900 dark:text-gray-100"/>
+          <h3 class="text-lg font-bold text-center text-gray-900 dark:text-gray-100">Calidad</h3>
+          <p class="text-normal text-gray-500 dark:text-gray-300 text-center">
+            Nos preocupamos en fabricar pallets cuyo ciclo de vida sea mayor por la calidad de los insumos.
+          </p>
+        </div>
+        <div class="grid gap-1">
+          <NormativaIcon class="size-10 mx-auto text-gray-900 dark:text-gray-100"/>
+          <h3 class="text-lg font-bold text-center text-gray-900 dark:text-gray-100">Normativa</h3>
+          <p class="text-normal text-gray-500 dark:text-gray-300 text-center">
+            Tomamos en cuenta el cumplimiento estricto de normas técnicas en la construcción.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
