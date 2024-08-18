@@ -1,54 +1,51 @@
-# Astro Starter Kit: Basics
+# PowerPallet.org - Página Web Oficial
 
-```sh
-npm create astro@latest -- --template basics
-```
+Bienvenido al repositorio de la página web oficial de [PowerPallet](https://powerpallet.org). Esta página web está diseñada para promover los servicios y productos de PowerPallet, una empresa dedicada a la fabricación y venta de pallets de alta calidad, sostenibles y adaptados a las necesidades de sus clientes.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 🌐 Descripción del Proyecto
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+El sitio web de PowerPallet ofrece información detallada sobre la empresa, incluyendo su misión, visión, valores, y una descripción de los servicios ofrecidos. La página está construida con [Astro](https://astro.build), un framework moderno que permite crear sitios web rápidos y eficientes.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+<div align="center">
+<a href="https://powerpallet.org">
+<img src="./public/mokup.png">
+</a>
+<p></p>
+</div>
 
-## 🚀 Project Structure
+<div align="center">
 
-Inside of your Astro project, you'll see the following folders and files:
+![Astro Badge](https://img.shields.io/badge/Astro-FF3E00?logo=astro&logoColor=fff&style=flat)
+![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)
+![Flowbite Badge](https://img.shields.io/badge/Flowbite-0284c7?logo=flowbite&logoColor=fff&style=flat)
+
+</div>
+
+## 🚀 Estructura del Proyecto
+
+La estructura del proyecto es la siguiente:
 
 ```text
 /
 ├── public/
-│   └── favicon.svg
+│   ├── favicon.svg
+│   ├── img/
+│   │   ├── europallet.png
+│   │   ├── palletuniversal.png
+│   │   └── otros recursos...
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   ├── Header.astro
+│   │   ├── Footer.astro
+│   │   ├── About.astro
+│   │   └── otros componentes...
+│   ├── icons/
+│   │   ├── DarkIcon.astro
+│   │   ├── LightIcon.astro
+│   │   └── otros íconos...
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
-│       └── index.astro
+│       ├── index.astro
+│       └── otros archivos .astro...
 └── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
