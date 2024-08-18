@@ -19,7 +19,7 @@ El sitio web de PowerPallet ofrece información detallada sobre la empresa, incl
 ![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)
 ![Flowbite Badge](https://img.shields.io/badge/Flowbite-0284c7?logo=flowbite&logoColor=fff&style=flat)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/302b219a-af66-4fc6-9c4d-2de02f4a2cb2/deploy-status)](https://app.netlify.com/sites/imaginative-cascaron-8e2be8/deploys)
-
+![Bun.js Badge](https://img.shields.io/badge/Bun.js-f472b6?logo=bun&logoColor=white&style=flat)
 
 
 </div>
